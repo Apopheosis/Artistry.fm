@@ -1,25 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home';
+import SearchBar from './components/SearchBar';
+import ArtistPage from "./components/ArtistPage";
+import AlbumPage from "./components/AlbumPage";
+import TrackPage from "./components/TrackPage"
+import {Route, Routes} from "react-router-dom";
+import Navigation from "./components/Navigation";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return(
+    <div className = "App">
+        <Navigation />
+        <Routes>
+            <Route path = "/artists" element={<ArtistPage />} />
+            <Route path = "/tracks" element={<TrackPage />} />
+            <Route path = "/albums" element={<AlbumPage />} />
+        </Routes>
     </div>
+
   );
-}
+  }
 
 export default App;

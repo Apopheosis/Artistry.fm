@@ -11,3 +11,130 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+button{width: 150px;
+  height:42px;
+  text-decoration: none;
+  color: black;
+  text-align:center;
+  line-height: 20px;
+  margin: 20px auto;
+  font: normal 17px arial;
+  margin-left: 20px;}
+  .filmTitle{
+    width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  margin-left: 100px;
+}
+
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  div {
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: auto;
+    display: block;
+  }
+
+  .box {
+    width: 30%;
+    height: 500px;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  ul.tags-list {
+    list-style: none;
+
+  }
+
+  li.tags-list {
+    border: green solid 1px;
+    border-radius: 5px;
+    display: inline;
+    margin-right: 5px;
+    padding: 3px;
+  }
+
+.little-box {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  alignment: center
+}
+
+input {
+  /**font-family: inherit;**/
+  width: auto;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1.3rem;
+  /**color: white;**/
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+button {
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+button:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+button:disabled {
+  background-color: #FAFBFC;
+  border-color: rgba(27, 31, 35, 0.15);
+  color: #959DA5;
+  cursor: default;
+}
+
+button:active {
+  background-color: #EDEFF2;
+  box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+  transition: none 0s;
+}
+
+button:focus {
+  outline: 1px transparent;
+}
+
+button:before {
+  display: none;
+}
